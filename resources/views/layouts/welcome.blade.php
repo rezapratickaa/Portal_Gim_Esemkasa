@@ -383,66 +383,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 8: Dropper -->
-                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
-                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/game/Dropper.jpg') }}" alt="Dropper" class="w-full h-full object-cover transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Action</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Skill</span>
-                        </div>
-                        <h3 class="text-white font-black text-xl mb-2">Dropper</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Test your reflexes in this fast-paced game of falling and dodging obstacles.</p>
-                        <div class="flex justify-end">
-                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 9: Martio -->
-                <div x-show="currentFilter === 'all' || currentFilter === 'popular'" 
-                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/game/martio.jpg') }}" alt="Martio" class="w-full h-full object-cover transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Arcade</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Retro</span>
-                        </div>
-                        <h3 class="text-white font-black text-xl mb-2">Martio</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">A classic retro-style adventure inspired by the golden age of arcade games.</p>
-                        <div class="flex justify-end">
-                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 10: Ciplis Adventure -->
-                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
-                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/game/Ciplisadventure.jpg') }}" alt="Ciplis Adventure" class="w-full h-full object-cover transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Platformer</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Fun</span>
-                        </div>
-                        <h3 class="text-white font-black text-xl mb-2">Ciplis Adventure</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Join Ciplis in a fun and colorful adventure through magical worlds.</p>
-                        <div class="flex justify-end">
-                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
         <!-- View All Button -->
         <div class="flex justify-center mt-20 mb-20">
-            <a href="#" class="px-6 py-3 bg-purple-600 border-2 border-purple-600 text-white hover:bg-purple-700 hover:border-purple-700 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-[0_0_30px_rgba(147,51,234,0.3)]">
+            <a href="{{ route('allgame') }}" class="px-6 py-3 bg-purple-600 border-2 border-purple-600 text-white hover:bg-purple-700 hover:border-purple-700 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-[0_0_30px_rgba(147,51,234,0.3)]">
                 View All Games
             </a>
         </div>

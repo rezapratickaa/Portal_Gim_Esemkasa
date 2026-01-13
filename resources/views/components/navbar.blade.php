@@ -21,11 +21,11 @@
           Home
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="#" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
+        <a href="{{ route('allgame') }}" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
           Games
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="/about" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
+        <a href="{{ route('about') }}" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
           About
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
         </a>
@@ -61,11 +61,11 @@
         Home
         <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       </a>
-      <a href="#" class="px-4 py-3 text-[#E2E2E2] hover:bg-white/5 rounded-xl font-bold transition-all flex items-center justify-between group">
+      <a href="{{ route('allgame') }}" class="px-4 py-3 text-[#E2E2E2] hover:bg-white/5 rounded-xl font-bold transition-all flex items-center justify-between group">
         Games
         <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       </a>
-      <a href="#" class="px-4 py-3 text-[#E2E2E2] hover:bg-white/5 rounded-xl font-bold transition-all flex items-center justify-between group">
+      <a href="{{ route('about') }}" class="px-4 py-3 text-[#E2E2E2] hover:bg-white/5 rounded-xl font-bold transition-all flex items-center justify-between group">
         About
         <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       </a>

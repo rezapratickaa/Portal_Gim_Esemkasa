@@ -45,147 +45,183 @@
 
         <section class="mt-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" x-transition 
+                <!-- Card 1 -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
                      class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
                     <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide1.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Action</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">RPG</span>
-                        </div>
-                        <h3 class="text-white font-black text-xl mb-2">Space Odyssey</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Embark on a journey through the stars and discover new worlds in this epic RPG.</p>
-                        <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'popular'" x-transition 
-                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide2.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Racing</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Sci-Fi</span>
-                        </div>
-                        <h3 class="text-white font-black text-xl mb-2">Neon City</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Race through the neon-lit streets of a futuristic metropolis in this high-speed racer.</p>
-                        <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'top'" x-transition 
-                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide3.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
+                        <img src="{{ asset('images/game/sokoban.jpg') }}" alt="Game Preview" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
                             <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Puzzle</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Magic</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Strategy</span>
                         </div>
-                        <h3 class="text-white font-black text-xl mb-2">Mystic Forest</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Solve puzzles and uncover secrets in a magical forest filled with mystery.</p>
+                        <h3 class="text-white font-black text-xl mb-2">Sokoban</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Classic puzzle game where you push boxes to their targets.</p>
                         <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
                         </div>
                     </div>
                 </div>
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" x-transition 
+                <!-- Card 2 -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'popular'" 
                      class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
                     <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide1.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
+                        <img src="{{ asset('images/game/Match Game.jpg') }}" alt="Match Game" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Puzzle</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Casual</span>
+                        </div>
+                        <h3 class="text-white font-black text-xl mb-2">Match Game</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">A relaxing jigsaw-like puzzle game to challenge your brain.</p>
+                        <div class="flex justify-end">
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'top'" 
+                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img src="{{ asset('images/game/Portalgo.jpg') }}" alt="Portalgo" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Arcade</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Platformer</span>
+                        </div>
+                        <h3 class="text-white font-black text-xl mb-2">Portalgo</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">High-speed portal action through challenging obstacle courses.</p>
+                        <div class="flex justify-end">
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
+                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img src="{{ asset('images/game/flowchart.jpg') }}" alt="Flowchart Game" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Educational</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Logic</span>
+                        </div>
+                        <h3 class="text-white font-black text-xl mb-2">Flowchart</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Learn programming concepts through fun flowchart puzzles.</p>
+                        <div class="flex justify-end">
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'popular'" 
+                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img src="{{ asset('images/game/Tales Of Azlan.jpg') }}" alt="Tales Of Azlan" class="w-full h-full object-fill transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">RPG</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Fantasy</span>
+                        </div>
+                        <h3 class="text-white font-black text-xl mb-2">Tales Of Azlan</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">A classic fantasy adventure with rich storytelling.</p>
+                        <div class="flex justify-end">
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
+                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img src="{{ asset('images/game/Recepic QuestCoff.jpeg') }}" alt="Recipe Quest Coff" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Adventure</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Coffee</span>
+                        </div>
+                        <h3 class="text-white font-black text-xl mb-2">Recipe Quest Coff</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">A unique adventure exploring the world of coffee recipes.</p>
+                        <div class="flex justify-end">
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7: Ninja Frog -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
+                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img src="{{ asset('images/game/Ninja Frog.jpg') }}" alt="Ninja Frog" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Platformer</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Action</span>
+                        </div>
+                        <h3 class="text-white font-black text-xl mb-2">Ninja Frog</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Leap through challenging levels and defeat enemies as a swift ninja frog.</p>
+                        <div class="flex justify-end">
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8: Dropper -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
+                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img src="{{ asset('images/game/Dropper.jpg') }}" alt="Dropper" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
                             <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Action</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Stealth</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Skill</span>
                         </div>
-                        <h3 class="text-white font-black text-xl mb-2">Shadow Warrior</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Master the art of stealth and combat in this intense action-packed platformer.</p>
+                        <h3 class="text-white font-black text-xl mb-2">Dropper</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Test your reflexes in this fast-paced game of falling and dodging obstacles.</p>
                         <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
                         </div>
                     </div>
                 </div>
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'popular'" x-transition 
+                <!-- Card 9: Martio -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'popular'" 
                      class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
                     <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide2.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
+                        <img src="{{ asset('images/game/martio.jpg') }}" alt="Martio" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Cyberpunk</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Shooter</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Arcade</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Retro</span>
                         </div>
-                        <h3 class="text-white font-black text-xl mb-2">Cyber Strike</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Engage in fast-paced tactical battles in a gritty cyberpunk world.</p>
+                        <h3 class="text-white font-black text-xl mb-2">Martio</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">A classic retro-style adventure inspired by the golden age of arcade games.</p>
                         <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
                         </div>
                     </div>
                 </div>
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'top'" x-transition 
+                <!-- Card 10: Ciplis Adventure -->
+                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" 
                      class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
                     <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide3.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
+                        <img src="{{ asset('images/game/Ciplisadventure.jpg') }}" alt="Ciplis Adventure" class="w-full h-full object-cover transition-transform duration-500">
                     </div>
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">BATTLE ROYALE</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">FPS</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Platformer</span>
+                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Fun</span>
                         </div>
-                        <h3 class="text-white font-black text-xl mb-2">Apex Legends</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Battle it out with iconic legends in the ultimate hero shooter experience.</p>
+                        <h3 class="text-white font-black text-xl mb-2">Ciplis Adventure</h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Join Ciplis in a fun and colorful adventure through magical worlds.</p>
                         <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'latest'" x-transition 
-                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide1.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Sandbox</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Casual</span>
-                        </div>
-                        <h3 class="text-white font-black text-xl mb-2">Block Builder</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Unleash your creativity and build anything you can imagine in this block-based world.</p>
-                        <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div x-show="currentFilter === 'all' || currentFilter === 'popular'" x-transition 
-                     class="bg-white/5 border border-white/10 rounded-4xl overflow-hidden group hover:border-purple-600/50 transition-all duration-300">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="{{ asset('images/slider/slide2.png') }}" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Mecha</span>
-                            <span class="px-3 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-[10px] font-bold text-purple-400 uppercase tracking-wider">Strategy</span>
-                        </div>
-                        <h3 class="text-white font-black text-xl mb-2">Iron Titan</h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2">Command giant mechs and dominate the battlefield in this strategic combat game.</p>
-                        <div class="flex justify-end">
-                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</button>
+                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
                         </div>
                     </div>
                 </div>
