@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('layouts.about');
 });
+
+Route::get('/allgame', function () {
+    return view('layouts.allgame');
+});
