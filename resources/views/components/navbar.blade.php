@@ -17,7 +17,7 @@
       
       <!-- Desktop Nav Links -->
       <div class="hidden md:flex items-center gap-10">
-        <a href="#" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
+        <a href="/" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
           Home
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
         </a>
@@ -57,7 +57,7 @@
        class="md:hidden bg-[#090A0A] border-b border-white/10 absolute w-full shadow-[0_20px_40px_rgba(0,0,0,0.5)] z-40 overflow-hidden"
        @click.away="mobileMenuOpen = false">
     <div class="flex flex-col p-6 gap-2">
-      <a href="#" class="px-4 py-3 text-[#E2E2E2] hover:bg-white/5 rounded-xl font-bold transition-all flex items-center justify-between group">
+      <a href="/" class="px-4 py-3 text-[#E2E2E2] hover:bg-white/5 rounded-xl font-bold transition-all flex items-center justify-between group">
         Home
         <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       </a>
