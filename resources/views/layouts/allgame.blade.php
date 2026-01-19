@@ -59,7 +59,7 @@
                         <h3 class="text-white font-black text-xl mb-2">Sokoban</h3>
                         <p class="text-gray-400 text-sm mb-6 line-clamp-2">Classic puzzle game where you push boxes to their targets.</p>
                         <div class="flex justify-end">
-                            <a href="{{ route('game.detail') }}" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
+                            <a href="/detail-game" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-full font-bold transition-colors">Play</a>
                         </div>
                     </div>
                 </div>

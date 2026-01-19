@@ -21,11 +21,11 @@
           Home
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="{{ route('allgame') }}" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
+        <a href="/allgame" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
           Games
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="{{ route('about') }}" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
+        <a href="#" class="text-sm font-bold text-gray-400 hover:text-white transition-colors relative group">
           About
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
         </a>
