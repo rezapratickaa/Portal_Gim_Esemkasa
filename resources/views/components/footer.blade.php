@@ -15,7 +15,7 @@
                     </div>
                 </a>
                 <p class="text-gray-400 text-lg leading-relaxed max-w-sm mb-10">
-                    Elevating the gaming experience for the next generation. Join our community and discover the future of play.
+                    Elevating the gaming experience for the next generation. Join our community and discover the future of playyy.
                 </p>
                 <div class="flex gap-4">
                     <!-- Instagram -->
